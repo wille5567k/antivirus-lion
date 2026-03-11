@@ -1,4 +1,3 @@
-[index.html.html](https://github.com/user-attachments/files/25916029/index.html.html)
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -21,7 +20,6 @@
             overflow-x: hidden;
         }
 
-        /* ===== TOP BANNER ===== */
         .top-banner {
             background: linear-gradient(90deg, #c40233, #ff1744);
             color: #fff;
@@ -38,7 +36,6 @@
             cursor: pointer;
         }
 
-        /* ===== NAVBAR ===== */
         nav {
             display: flex;
             justify-content: space-between;
@@ -76,9 +73,7 @@
             letter-spacing: -0.5px;
         }
 
-        .nav-logo-text .red {
-            color: #c40233;
-        }
+        .nav-logo-text .red { color: #c40233; }
 
         nav ul {
             display: flex;
@@ -96,9 +91,7 @@
             position: relative;
         }
 
-        nav ul li a:hover {
-            color: #c40233;
-        }
+        nav ul li a:hover { color: #c40233; }
 
         nav ul li a::after {
             content: '';
@@ -111,9 +104,7 @@
             transition: width 0.3s;
         }
 
-        nav ul li a:hover::after {
-            width: 100%;
-        }
+        nav ul li a:hover::after { width: 100%; }
 
         .nav-btn {
             background: #c40233;
@@ -124,20 +115,17 @@
             font-size: 0.85rem;
             transition: all 0.3s;
             box-shadow: 0 4px 15px rgba(196, 2, 51, 0.3);
+            cursor: pointer;
         }
 
-        .nav-btn::after {
-            display: none !important;
-        }
+        .nav-btn::after { display: none !important; }
 
         .nav-btn:hover {
             background: #a30029 !important;
-            color: #fff !important;
             transform: translateY(-1px);
             box-shadow: 0 6px 20px rgba(196, 2, 51, 0.4);
         }
 
-        /* ===== HERO ===== */
         .hero {
             display: flex;
             align-items: center;
@@ -189,13 +177,8 @@
             color: #0d0d2b;
         }
 
-        .hero h1 .red {
-            color: #c40233;
-        }
-
-        .hero h1 .gold {
-            color: #d4900a;
-        }
+        .hero h1 .red { color: #c40233; }
+        .hero h1 .gold { color: #d4900a; }
 
         .hero-desc {
             font-size: 1.1rem;
@@ -242,9 +225,7 @@
             transition: left 0.5s;
         }
 
-        .btn-primary:hover::before {
-            left: 100%;
-        }
+        .btn-primary:hover::before { left: 100%; }
 
         .btn-primary:hover {
             transform: translateY(-2px);
@@ -290,7 +271,6 @@
             font-weight: 700;
         }
 
-        /* Shield visual */
         .hero-right {
             flex: 1;
             display: flex;
@@ -390,23 +370,9 @@
             white-space: nowrap;
         }
 
-        .floating-badge-1 {
-            top: 30px;
-            right: 10px;
-            animation-delay: 0s;
-        }
-
-        .floating-badge-2 {
-            bottom: 50px;
-            left: 0px;
-            animation-delay: 1s;
-        }
-
-        .floating-badge-3 {
-            top: 50px;
-            left: 10px;
-            animation-delay: 2s;
-        }
+        .floating-badge-1 { top: 30px; right: 10px; animation-delay: 0s; }
+        .floating-badge-2 { bottom: 50px; left: 0px; animation-delay: 1s; }
+        .floating-badge-3 { top: 50px; left: 10px; animation-delay: 2s; }
 
         @keyframes badge-float {
             0%, 100% { transform: translateY(0); }
@@ -427,7 +393,6 @@
         .badge-icon.blue { background: #eef4ff; color: #3b82f6; }
         .badge-icon.red { background: #fff1f1; color: #c40233; }
 
-        /* ===== TRUST BAR ===== */
         .trust-bar {
             background: #f8f9fb;
             padding: 30px 60px;
@@ -464,11 +429,8 @@
             color: #bbb;
         }
 
-        .trust-item span {
-            font-size: 1.5rem;
-        }
+        .trust-item span { font-size: 1.5rem; }
 
-        /* ===== STATS SECTION ===== */
         .stats-section {
             background: linear-gradient(135deg, #0d0d2b, #1a1a40);
             padding: 70px 60px;
@@ -484,9 +446,7 @@
             text-align: center;
         }
 
-        .stat-item {
-            padding: 20px;
-        }
+        .stat-item { padding: 20px; }
 
         .stat-number {
             font-size: 3rem;
@@ -496,17 +456,13 @@
             letter-spacing: -1px;
         }
 
-        .stat-number .red-num {
-            color: #ff4466;
-        }
+        .stat-number .red-num { color: #ff4466; }
 
         .stat-desc {
             font-size: 0.9rem;
             color: #8888aa;
-            font-weight: 400;
         }
 
-        /* ===== FEATURES SECTION ===== */
         .features-section {
             padding: 80px 60px;
             max-width: 1200px;
@@ -536,7 +492,6 @@
             font-weight: 800;
             color: #0d0d2b;
             margin-bottom: 15px;
-            letter-spacing: -0.5px;
         }
 
         .section-header p {
@@ -576,9 +531,7 @@
             transition: transform 0.3s;
         }
 
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
+        .feature-card:hover::before { transform: scaleX(1); }
 
         .feature-card:hover {
             box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -610,7 +563,6 @@
             line-height: 1.7;
         }
 
-        /* ===== PROTECTION PLAN ===== */
         .plan-section {
             background: linear-gradient(135deg, #fafafa, #f5f5f5);
             padding: 80px 60px;
@@ -672,9 +624,7 @@
             border-bottom: 1px solid #f5f5f5;
         }
 
-        .plan-features li:last-child {
-            border: none;
-        }
+        .plan-features li:last-child { border: none; }
 
         .plan-check {
             width: 22px;
@@ -720,9 +670,7 @@
             margin-bottom: 30px;
         }
 
-        .plan-price .small {
-            font-size: 1.5rem;
-        }
+        .plan-price .small { font-size: 1.5rem; }
 
         .plan-download-btn {
             display: inline-flex;
@@ -754,7 +702,6 @@
             color: #6666aa;
         }
 
-        /* ===== DEVICE SUPPORT ===== */
         .devices-section {
             padding: 60px;
             text-align: center;
@@ -802,7 +749,6 @@
             background: #fff1f1;
         }
 
-        /* ===== CTA BANNER ===== */
         .cta-section {
             background: linear-gradient(135deg, #c40233, #e8053a, #ff2d55);
             padding: 70px 60px;
@@ -820,17 +766,6 @@
             width: 500px;
             height: 500px;
             background: rgba(255,255,255,0.05);
-            border-radius: 50%;
-        }
-
-        .cta-section::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 400px;
-            height: 400px;
-            background: rgba(255,255,255,0.03);
             border-radius: 50%;
         }
 
@@ -874,7 +809,6 @@
             box-shadow: 0 12px 35px rgba(0,0,0,0.2);
         }
 
-        /* ===== FOOTER ===== */
         footer {
             background: #0d0d2b;
             color: #666;
@@ -926,13 +860,8 @@
             margin-bottom: 18px;
         }
 
-        .footer-col ul {
-            list-style: none;
-        }
-
-        .footer-col ul li {
-            margin-bottom: 10px;
-        }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
 
         .footer-col ul li a {
             color: #555;
@@ -941,9 +870,7 @@
             transition: color 0.2s;
         }
 
-        .footer-col ul li a:hover {
-            color: #ff4466;
-        }
+        .footer-col ul li a:hover { color: #ff4466; }
 
         .footer-bottom {
             max-width: 1100px;
@@ -959,104 +886,36 @@
             gap: 10px;
         }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 968px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                padding: 50px 30px;
-            }
-
-            .hero-left {
-                max-width: 100%;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .hero-meta {
-                justify-content: center;
-            }
-
-            .shield-visual {
-                width: 300px;
-                height: 300px;
-            }
-
-            .main-shield {
-                width: 150px;
-                height: 175px;
-            }
-
-            .main-shield .lion-emoji {
-                font-size: 3rem;
-            }
-
-            .shield-circle-1 {
-                width: 240px;
-                height: 240px;
-            }
-
-            .shield-circle-2 {
-                width: 280px;
-                height: 280px;
-            }
-
-            .floating-badge {
-                display: none;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .plan-card {
-                flex-direction: column;
-            }
-
-            .plan-right {
-                width: 100%;
-            }
-
-            nav {
-                padding: 15px 20px;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .footer-top {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .section-header h2 {
-                font-size: 1.8rem;
-            }
-
-            .cta-section h2 {
-                font-size: 1.8rem;
-            }
+            .hero { flex-direction: column; text-align: center; padding: 50px 30px; }
+            .hero-left { max-width: 100%; }
+            .hero-buttons { justify-content: center; }
+            .hero-meta { justify-content: center; }
+            .shield-visual { width: 300px; height: 300px; }
+            .main-shield { width: 150px; height: 175px; }
+            .main-shield .lion-emoji { font-size: 3rem; }
+            .shield-circle-1 { width: 240px; height: 240px; }
+            .shield-circle-2 { width: 280px; height: 280px; }
+            .floating-badge { display: none; }
+            .features-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .plan-card { flex-direction: column; }
+            .plan-right { width: 100%; }
+            nav { padding: 15px 20px; }
+            nav ul { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+            .section-header h2 { font-size: 1.8rem; }
+            .cta-section h2 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Banner -->
     <div class="top-banner">
-        🔥 Begränsat erbjudande: Få 60% rabatt på Anti Virus Lion Total Protection. <span>Hämta nu →</span>
+        🔥 Begränsat erbjudande: Få 60% rabatt på Anti Virus Lion Total Protection. <span onclick="downloadApp()">Hämta nu →</span>
     </div>
 
-    <!-- Navbar -->
     <nav>
         <div class="nav-logo">
             <div class="nav-logo-icon">🦁</div>
@@ -1064,15 +923,14 @@
         </div>
         <ul>
             <li><a href="#">Produkter</a></li>
-            <li><a href="#">Funktioner</a></li>
-            <li><a href="#">Priser</a></li>
+            <li><a href="#features">Funktioner</a></li>
+            <li><a href="#pricing">Priser</a></li>
             <li><a href="#">Support</a></li>
             <li><a href="#">Om oss</a></li>
-            <li><a href="#" class="nav-btn">Ladda ner</a></li>
+            <li><a href="#" onclick="downloadApp(); return false;" class="nav-btn">Ladda ner</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-left">
             <div class="hero-badge">
@@ -1082,23 +940,17 @@
             <h1>Download<br><span class="red">Anti Virus</span> <span class="gold">Lion</span></h1>
             <p class="hero-desc">Skydda alla dina enheter med prisbelönt säkerhet. Avancerat skydd mot virus, ransomware, phishing och cyberhot — dygnet runt.</p>
             <div class="hero-buttons">
-                <a href="#" class="btn-primary" id="heroDownload">
+                <button class="btn-primary" onclick="downloadApp()">
                     ⬇️ Download Anti Virus Lion
-                </a>
-                <a href="#" class="btn-secondary">
+                </button>
+                <a href="#features" class="btn-secondary">
                     📋 Se alla funktioner
                 </a>
             </div>
             <div class="hero-meta">
-                <div class="hero-meta-item">
-                    <span class="check-green">✔</span> Gratis i 30 dagar
-                </div>
-                <div class="hero-meta-item">
-                    <span class="check-green">✔</span> Ingen kreditkort krävs
-                </div>
-                <div class="hero-meta-item">
-                    <span class="check-green">✔</span> 85 MB
-                </div>
+                <div class="hero-meta-item"><span class="check-green">✔</span> Gratis i 30 dagar</div>
+                <div class="hero-meta-item"><span class="check-green">✔</span> Ingen kreditkort krävs</div>
+                <div class="hero-meta-item"><span class="check-green">✔</span> 85 MB</div>
             </div>
         </div>
         <div class="hero-right">
@@ -1126,7 +978,6 @@
         </div>
     </section>
 
-    <!-- Trust Bar -->
     <div class="trust-bar">
         <div class="trust-label">Testat & godkänt av</div>
         <div class="trust-logos">
@@ -1138,7 +989,6 @@
         </div>
     </div>
 
-    <!-- Stats Section -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-item">
@@ -1160,8 +1010,7 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features-section">
+    <section class="features-section" id="features">
         <div class="section-header">
             <div class="section-label">Funktioner</div>
             <h2>Komplett skydd för din digitala värld</h2>
@@ -1171,27 +1020,27 @@
             <div class="feature-card">
                 <div class="feature-card-icon">🛡️</div>
                 <h3>Realtidsskydd</h3>
-                <p>Kontinuerlig övervakning som stoppar hot direkt — innan de hinner orsaka skada på ditt system.</p>
+                <p>Kontinuerlig övervakning som stoppar hot direkt — innan de hinner orsaka skada.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card-icon">🤖</div>
                 <h3>Lion AI Engine</h3>
-                <p>Vår AI-drivna motor analyserar beteendemönster och identifierar okända hot automatiskt.</p>
+                <p>Vår AI-drivna motor analyserar beteendemönster och identifierar okända hot.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card-icon">🌐</div>
                 <h3>Webbskydd</h3>
-                <p>Säker surfning med automatisk blockering av farliga webbsidor och phishing-försök.</p>
+                <p>Säker surfning med automatisk blockering av farliga webbsidor och phishing.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card-icon">🔥</div>
                 <h3>Brandvägg</h3>
-                <p>Avancerad brandvägg som övervakar all nätverkstrafik och blockerar obehörig åtkomst.</p>
+                <p>Avancerad brandvägg som övervakar nätverkstrafik och blockerar obehörig åtkomst.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card-icon">📧</div>
                 <h3>E-postskydd</h3>
-                <p>Skannar bilagor och länkar i e-post för att förhindra malware och phishing-attacker.</p>
+                <p>Skannar bilagor och länkar i e-post för att förhindra malware-attacker.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card-icon">⚡</div>
@@ -1201,8 +1050,7 @@
         </div>
     </section>
 
-    <!-- Plan Section -->
-    <section class="plan-section">
+    <section class="plan-section" id="pricing">
         <div class="section-header">
             <div class="section-label">Populärast</div>
             <h2>Total Protection</h2>
@@ -1228,7 +1076,7 @@
                 <div class="plan-price-label">Från</div>
                 <div class="plan-price"><span class="small">kr</span>29<span class="small">/mån</span></div>
                 <div class="plan-price-sub">Faktureras årsvis. Spara 60%</div>
-                <button class="plan-download-btn" id="planDownload">
+                <button class="plan-download-btn" onclick="downloadApp()">
                     ⬇️ Download Nu
                 </button>
                 <div class="plan-guarantee">🔒 30 dagars pengarna-tillbaka-garanti</div>
@@ -1236,43 +1084,25 @@
         </div>
     </section>
 
-    <!-- Devices Section -->
     <section class="devices-section">
         <h3>Fungerar på alla dina enheter</h3>
         <div class="devices-row">
-            <div class="device-item">
-                <div class="device-icon">🖥️</div>
-                Windows
-            </div>
-            <div class="device-item">
-                <div class="device-icon">🍎</div>
-                macOS
-            </div>
-            <div class="device-item">
-                <div class="device-icon">📱</div>
-                Android
-            </div>
-            <div class="device-item">
-                <div class="device-icon">📲</div>
-                iOS
-            </div>
-            <div class="device-item">
-                <div class="device-icon">🐧</div>
-                Linux
-            </div>
+            <div class="device-item"><div class="device-icon">🖥️</div>Windows</div>
+            <div class="device-item"><div class="device-icon">🍎</div>macOS</div>
+            <div class="device-item"><div class="device-icon">📱</div>Android</div>
+            <div class="device-item"><div class="device-icon">📲</div>iOS</div>
+            <div class="device-item"><div class="device-icon">🐧</div>Linux</div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
     <section class="cta-section">
         <h2>🦁 Skydda dig idag med Anti Virus Lion</h2>
         <p>Gå med över 10 miljoner användare som litar på Lion för sin digitala säkerhet.</p>
-        <button class="btn-white" id="ctaDownload">
+        <button class="btn-white" onclick="downloadApp()">
             ⬇️ Download Anti Virus Lion — Gratis
         </button>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-top">
             <div class="footer-brand">
@@ -1280,7 +1110,7 @@
                     <div class="footer-logo-icon">🦁</div>
                     <div class="footer-logo-text">Anti Virus Lion</div>
                 </div>
-                <p>Anti Virus Lion ger dig förstklassigt skydd mot alla typer av digitala hot. Pålitlig, snabb och enkel att använda.</p>
+                <p>Anti Virus Lion ger dig förstklassigt skydd mot alla typer av digitala hot.</p>
             </div>
             <div class="footer-col">
                 <h4>Produkter</h4>
@@ -1317,63 +1147,156 @@
     </footer>
 
     <script>
-        // Animate stat counters
-        function animateCounter(id, target, suffix) {
-            const el = document.getElementById(id);
-            let current = 0;
-            const increment = target / 60;
-            const timer = setInterval(() => {
+        // DOWNLOAD FUNCTION - skapar filen och laddar ner den direkt
+        function downloadApp() {
+            const appCode = `<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Anti Virus Lion - Scanner</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0d0d2b;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.container{text-align:center;max-width:500px;padding:20px;width:100%}
+.logo{font-size:5rem;margin-bottom:20px}
+h1{font-size:2rem;margin-bottom:5px}
+h1 .red{color:#c40233}
+h1 .gold{color:#d4900a}
+.version{color:#666;margin-bottom:30px;font-size:0.9rem}
+.progress-container{background:#1a1a40;border-radius:12px;padding:30px;margin-bottom:25px}
+.progress-text{margin-bottom:15px;font-size:0.95rem;color:#aaa}
+.progress-bar{width:100%;height:12px;background:#2a2a50;border-radius:6px;overflow:hidden;margin-bottom:10px}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#c40233,#ff4466);border-radius:6px;transition:width 0.3s}
+.percent{color:#ff4466;font-weight:700;font-size:1.2rem}
+.status{background:#1a1a40;border-radius:12px;padding:20px;margin-bottom:20px}
+.status-item{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:0.9rem;color:#888;text-align:left}
+.status-item.done{color:#22c55e}
+.status-item.active{color:#ff4466}
+.shield-status{margin-top:20px;padding:15px;border-radius:10px;font-weight:700;font-size:1.1rem}
+.shield-protected{background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);color:#22c55e}
+.footer-text{color:#444;font-size:0.75rem;margin-top:20px}
+.scan-btn{background:linear-gradient(135deg,#c40233,#e8053a);color:#fff;border:none;padding:14px 35px;border-radius:25px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:15px;transition:all 0.3s}
+.scan-btn:hover{transform:scale(1.05);box-shadow:0 5px 20px rgba(196,2,51,0.4)}
+.hidden{display:none}
+.threat-found{background:rgba(196,2,51,0.1);border:1px solid rgba(196,2,51,0.3);color:#ff4466;padding:10px;border-radius:8px;margin-top:10px;font-size:0.85rem;text-align:left}
+.threat-clean{background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);color:#22c55e;padding:10px;border-radius:8px;margin-top:10px;font-size:0.85rem}
+.info-box{background:#1a1a40;border-radius:12px;padding:20px;margin-top:15px;text-align:left}
+.info-row{display:flex;justify-content:space-between;padding:6px 0;font-size:0.85rem;border-bottom:1px solid #2a2a50}
+.info-row:last-child{border:none}
+.info-label{color:#666}
+.info-value{color:#fff;font-weight:600}
+.rescan-btn{background:transparent;border:2px solid #c40233;color:#c40233;padding:12px 30px;border-radius:25px;font-size:0.9rem;font-weight:600;cursor:pointer;margin-top:15px;transition:all 0.3s}
+.rescan-btn:hover{background:#c40233;color:#fff}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="logo">🦁</div>
+<h1><span class="red">Anti Virus</span> <span class="gold">Lion</span></h1>
+<div class="version">Version 2025.1 — Total Protection</div>
+<div class="progress-container">
+<div class="progress-text" id="progressText">Klicka för att starta skanning...</div>
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+<div class="percent" id="percent">0%</div>
+</div>
+<button class="scan-btn" id="scanBtn" onclick="startScan()">🔍 Starta Skanning</button>
+<div class="status hidden" id="statusBox">
+<div class="status-item" id="s1">⏳ Kontrollerar systemfiler...</div>
+<div class="status-item" id="s2">⏳ Skannar nedladdningar...</div>
+<div class="status-item" id="s3">⏳ Kontrollerar webbläsare...</div>
+<div class="status-item" id="s4">⏳ Skannar register...</div>
+<div class="status-item" id="s5">⏳ Letar efter malware...</div>
+<div class="status-item" id="s6">⏳ Kontrollerar nätverk...</div>
+</div>
+<div class="hidden" id="result"></div>
+<div class="hidden" id="infoBox"></div>
+<div class="footer-text">Anti Virus Lion © 2025 — Skyddar din digitala värld 🦁</div>
+</div>
+<script>
+function startScan(){
+var btn=document.getElementById('scanBtn');
+var statusBox=document.getElementById('statusBox');
+var fill=document.getElementById('progressFill');
+var percent=document.getElementById('percent');
+var text=document.getElementById('progressText');
+var result=document.getElementById('result');
+var infoBox=document.getElementById('infoBox');
+btn.classList.add('hidden');
+statusBox.classList.remove('hidden');
+text.textContent='Skannar ditt system...';
+var progress=0;
+var steps=[{id:'s1',at:10},{id:'s2',at:25},{id:'s3',at:42},{id:'s4',at:58},{id:'s5',at:75},{id:'s6',at:90}];
+var filesScanned=0;
+var interval=setInterval(function(){
+progress+=1;
+filesScanned+=Math.floor(Math.random()*847)+100;
+fill.style.width=progress+'%';
+percent.textContent=progress+'%';
+text.textContent='Skannar... '+filesScanned.toLocaleString()+' filer kontrollerade';
+steps.forEach(function(step){
+var el=document.getElementById(step.id);
+if(progress>=step.at+12){
+if(!el.classList.contains('done')){el.className='status-item done';el.innerHTML='✅'+el.innerHTML.substring(1)}
+}else if(progress>=step.at){
+if(!el.classList.contains('active')){el.className='status-item active';el.innerHTML='🔍'+el.innerHTML.substring(1)}
+}
+});
+if(progress>=100){
+clearInterval(interval);
+text.textContent='Skanning klar! '+filesScanned.toLocaleString()+' filer kontrollerade';
+fill.style.background='linear-gradient(90deg,#22c55e,#4ade80)';
+percent.style.color='#22c55e';
+result.classList.remove('hidden');
+result.innerHTML='<div class="shield-status shield-protected">🛡️ Ditt system är skyddat! Inga hot hittades.</div><div class="threat-clean">✅ 0 virus hittade<br>✅ 0 malware hittade<br>✅ 0 spyware hittade<br>✅ Brandvägg aktiv<br>✅ Webbskydd aktivt</div>';
+infoBox.classList.remove('hidden');
+infoBox.innerHTML='<div class="info-box"><div class="info-row"><span class="info-label">Filer skannade</span><span class="info-value">'+filesScanned.toLocaleString()+'</span></div><div class="info-row"><span class="info-label">Hot hittade</span><span class="info-value" style="color:#22c55e">0</span></div><div class="info-row"><span class="info-label">Skyddsnivå</span><span class="info-value" style="color:#22c55e">Utmärkt</span></div><div class="info-row"><span class="info-label">Senaste uppdatering</span><span class="info-value">Idag</span></div><div class="info-row"><span class="info-label">Licens</span><span class="info-value">Total Protection</span></div></div><button class="rescan-btn" onclick="location.reload()">🔄 Skanna igen</button>';
+}
+},80);
+}
+</script>
+</body>
+</html>`;
+
+            var blob = new Blob([appCode], {type: 'text/html'});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'AntiVirusLion_Setup.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Animate counters
+        function animateCounter(id, target) {
+            var el = document.getElementById(id);
+            var current = 0;
+            var increment = target / 60;
+            var timer = setInterval(function() {
                 current += increment;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                if (target >= 1000000) {
-                    el.textContent = (current / 1000000).toFixed(1) + 'M+';
-                } else if (target >= 1000) {
-                    el.textContent = Math.floor(current / 1000) + 'K+';
-                } else {
-                    el.textContent = Math.floor(current) + suffix;
-                }
+                if (current >= target) { current = target; clearInterval(timer); }
+                if (target >= 1000000) { el.textContent = (current / 1000000).toFixed(1) + 'M+'; }
+                else if (target >= 1000) { el.textContent = Math.floor(current / 1000) + 'K+'; }
             }, 30);
         }
 
-        // Intersection Observer for stats
-        const statsSection = document.querySelector('.stats-section');
-        let statsCounted = false;
-        const observer = new IntersectionObserver((entries) => {
+        var statsSection = document.querySelector('.stats-section');
+        var statsCounted = false;
+        var observer = new IntersectionObserver(function(entries) {
             if (entries[0].isIntersecting && !statsCounted) {
                 statsCounted = true;
-                animateCounter('stat1', 10000000, '');
-                animateCounter('stat2', 850000, '');
+                animateCounter('stat1', 10000000);
+                animateCounter('stat2', 850000);
             }
         }, { threshold: 0.3 });
         observer.observe(statsSection);
 
-        // Download button effects
-        const downloadButtons = ['heroDownload', 'planDownload', 'ctaDownload'];
-        downloadButtons.forEach(id => {
-            const btn = document.getElementById(id);
-            if (btn) {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const originalText = this.innerHTML;
-                    this.innerHTML = '✅ Tack! Nedladdningen startar...';
-                    this.style.pointerEvents = 'none';
-                    setTimeout(() => {
-                        this.innerHTML = originalText;
-                        this.style.pointerEvents = 'auto';
-                    }, 3000);
-                });
-            }
-        });
-
-        // Smooth reveal on scroll
-        const cards = document.querySelectorAll('.feature-card');
-        const cardObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
+        var cards = document.querySelectorAll('.feature-card');
+        var cardObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry, index) {
                 if (entry.isIntersecting) {
-                    setTimeout(() => {
+                    setTimeout(function() {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
                     }, index * 100);
@@ -1381,208 +1304,12 @@
             });
         }, { threshold: 0.1 });
 
-        cards.forEach(card => {
+        cards.forEach(function(card) {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'all 0.6s ease';
             cardObserver.observe(card);
         });
-    </script>
-</body>
-</html>
-[AntiVirusLion_Demo.html](https://github.com/user-attachments/files/25916503/AntiVirusLion_Demo.html)
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <title>Anti Virus Lion - Demo</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #0d0d2b;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            text-align: center;
-            max-width: 500px;
-            padding: 20px;
-        }
-        .logo { font-size: 5rem; margin-bottom: 20px; }
-        h1 { font-size: 2rem; margin-bottom: 5px; }
-        h1 .red { color: #c40233; }
-        h1 .gold { color: #d4900a; }
-        .version { color: #666; margin-bottom: 30px; font-size: 0.9rem; }
-        .progress-container {
-            background: #1a1a40;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 25px;
-        }
-        .progress-text {
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-            color: #aaa;
-        }
-        .progress-bar {
-            width: 100%;
-            height: 12px;
-            background: #2a2a50;
-            border-radius: 6px;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-        .progress-fill {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(90deg, #c40233, #ff4466);
-            border-radius: 6px;
-            transition: width 0.3s;
-        }
-        .percent { color: #ff4466; font-weight: 700; font-size: 1.2rem; }
-        .status {
-            background: #1a1a40;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .status-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 8px 0;
-            font-size: 0.9rem;
-            color: #888;
-        }
-        .status-item.done { color: #22c55e; }
-        .status-item.active { color: #ff4466; }
-        .shield-status {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-        .shield-protected {
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.3);
-            color: #22c55e;
-        }
-        .shield-scanning {
-            background: rgba(196, 2, 51, 0.1);
-            border: 1px solid rgba(196, 2, 51, 0.3);
-            color: #ff4466;
-        }
-        .footer-text {
-            color: #444;
-            font-size: 0.75rem;
-            margin-top: 20px;
-        }
-        .scan-btn {
-            background: linear-gradient(135deg, #c40233, #e8053a);
-            color: #fff;
-            border: none;
-            padding: 14px 35px;
-            border-radius: 25px;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
-            margin-top: 15px;
-            transition: all 0.3s;
-        }
-        .scan-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(196, 2, 51, 0.4);
-        }
-        .hidden { display: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="logo">🦁</div>
-        <h1><span class="red">Anti Virus</span> <span class="gold">Lion</span></h1>
-        <div class="version">Demo Version 2025.1</div>
-
-        <div class="progress-container">
-            <div class="progress-text" id="progressText">Klicka för att starta skanning...</div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
-            </div>
-            <div class="percent" id="percent">0%</div>
-        </div>
-
-        <button class="scan-btn" id="scanBtn" onclick="startScan()">🔍 Starta Skanning</button>
-
-        <div class="status hidden" id="statusBox">
-            <div class="status-item" id="s1">⏳ Kontrollerar systemfiler...</div>
-            <div class="status-item" id="s2">⏳ Skannar nedladdningar...</div>
-            <div class="status-item" id="s3">⏳ Kontrollerar webbläsare...</div>
-            <div class="status-item" id="s4">⏳ Skannar register...</div>
-            <div class="status-item" id="s5">⏳ Letar efter malware...</div>
-        </div>
-
-        <div class="hidden" id="result">
-            <div class="shield-status shield-protected">
-                🛡️ Ditt system är skyddat! Inga hot hittades.
-            </div>
-        </div>
-
-        <div class="footer-text">
-            Anti Virus Lion Demo © 2025 — Detta är en demo-version
-        </div>
-    </div>
-
-    <script>
-        function startScan() {
-            const btn = document.getElementById('scanBtn');
-            const statusBox = document.getElementById('statusBox');
-            const fill = document.getElementById('progressFill');
-            const percent = document.getElementById('percent');
-            const text = document.getElementById('progressText');
-            const result = document.getElementById('result');
-
-            btn.classList.add('hidden');
-            statusBox.classList.remove('hidden');
-            text.textContent = 'Skannar ditt system...';
-
-            let progress = 0;
-            const steps = [
-                { id: 's1', at: 15 },
-                { id: 's2', at: 35 },
-                { id: 's3', at: 55 },
-                { id: 's4', at: 75 },
-                { id: 's5', at: 95 }
-            ];
-
-            const interval = setInterval(() => {
-                progress += 1;
-                fill.style.width = progress + '%';
-                percent.textContent = progress + '%';
-
-                steps.forEach(step => {
-                    const el = document.getElementById(step.id);
-                    if (progress >= step.at + 10) {
-                        el.className = 'status-item done';
-                        el.innerHTML = '✅' + el.innerHTML.substring(1);
-                    } else if (progress >= step.at) {
-                        el.className = 'status-item active';
-                        el.innerHTML = '🔍' + el.innerHTML.substring(1);
-                    }
-                });
-
-                if (progress >= 100) {
-                    clearInterval(interval);
-                    text.textContent = 'Skanning klar!';
-                    result.classList.remove('hidden');
-                    fill.style.background = 'linear-gradient(90deg, #22c55e, #4ade80)';
-                }
-            }, 80);
-        }
     </script>
 </body>
 </html>
