@@ -1390,3 +1390,199 @@
     </script>
 </body>
 </html>
+[AntiVirusLion_Demo.html](https://github.com/user-attachments/files/25916503/AntiVirusLion_Demo.html)
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Anti Virus Lion - Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0d0d2b;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 20px;
+        }
+        .logo { font-size: 5rem; margin-bottom: 20px; }
+        h1 { font-size: 2rem; margin-bottom: 5px; }
+        h1 .red { color: #c40233; }
+        h1 .gold { color: #d4900a; }
+        .version { color: #666; margin-bottom: 30px; font-size: 0.9rem; }
+        .progress-container {
+            background: #1a1a40;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .progress-text {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: #aaa;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: #2a2a50;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #c40233, #ff4466);
+            border-radius: 6px;
+            transition: width 0.3s;
+        }
+        .percent { color: #ff4466; font-weight: 700; font-size: 1.2rem; }
+        .status {
+            background: #1a1a40;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .status-item.done { color: #22c55e; }
+        .status-item.active { color: #ff4466; }
+        .shield-status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .shield-protected {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+        .shield-scanning {
+            background: rgba(196, 2, 51, 0.1);
+            border: 1px solid rgba(196, 2, 51, 0.3);
+            color: #ff4466;
+        }
+        .footer-text {
+            color: #444;
+            font-size: 0.75rem;
+            margin-top: 20px;
+        }
+        .scan-btn {
+            background: linear-gradient(135deg, #c40233, #e8053a);
+            color: #fff;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+        .scan-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(196, 2, 51, 0.4);
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🦁</div>
+        <h1><span class="red">Anti Virus</span> <span class="gold">Lion</span></h1>
+        <div class="version">Demo Version 2025.1</div>
+
+        <div class="progress-container">
+            <div class="progress-text" id="progressText">Klicka för att starta skanning...</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="percent" id="percent">0%</div>
+        </div>
+
+        <button class="scan-btn" id="scanBtn" onclick="startScan()">🔍 Starta Skanning</button>
+
+        <div class="status hidden" id="statusBox">
+            <div class="status-item" id="s1">⏳ Kontrollerar systemfiler...</div>
+            <div class="status-item" id="s2">⏳ Skannar nedladdningar...</div>
+            <div class="status-item" id="s3">⏳ Kontrollerar webbläsare...</div>
+            <div class="status-item" id="s4">⏳ Skannar register...</div>
+            <div class="status-item" id="s5">⏳ Letar efter malware...</div>
+        </div>
+
+        <div class="hidden" id="result">
+            <div class="shield-status shield-protected">
+                🛡️ Ditt system är skyddat! Inga hot hittades.
+            </div>
+        </div>
+
+        <div class="footer-text">
+            Anti Virus Lion Demo © 2025 — Detta är en demo-version
+        </div>
+    </div>
+
+    <script>
+        function startScan() {
+            const btn = document.getElementById('scanBtn');
+            const statusBox = document.getElementById('statusBox');
+            const fill = document.getElementById('progressFill');
+            const percent = document.getElementById('percent');
+            const text = document.getElementById('progressText');
+            const result = document.getElementById('result');
+
+            btn.classList.add('hidden');
+            statusBox.classList.remove('hidden');
+            text.textContent = 'Skannar ditt system...';
+
+            let progress = 0;
+            const steps = [
+                { id: 's1', at: 15 },
+                { id: 's2', at: 35 },
+                { id: 's3', at: 55 },
+                { id: 's4', at: 75 },
+                { id: 's5', at: 95 }
+            ];
+
+            const interval = setInterval(() => {
+                progress += 1;
+                fill.style.width = progress + '%';
+                percent.textContent = progress + '%';
+
+                steps.forEach(step => {
+                    const el = document.getElementById(step.id);
+                    if (progress >= step.at + 10) {
+                        el.className = 'status-item done';
+                        el.innerHTML = '✅' + el.innerHTML.substring(1);
+                    } else if (progress >= step.at) {
+                        el.className = 'status-item active';
+                        el.innerHTML = '🔍' + el.innerHTML.substring(1);
+                    }
+                });
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    text.textContent = 'Skanning klar!';
+                    result.classList.remove('hidden');
+                    fill.style.background = 'linear-gradient(90deg, #22c55e, #4ade80)';
+                }
+            }, 80);
+        }
+    </script>
+</body>
+</html>
